@@ -15,9 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-       - name: Transfer images to server
-          run: |
-            scp -r images/* ec2-use@54.211.167.113:/home/ec2-user/imagem
+      - name: Transfer images to server
+        run: |
+          scp -r images/* ec2-use@54.211.167.113:/home/ec2-user/imagem
 
-          env:
-            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
