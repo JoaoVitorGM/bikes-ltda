@@ -6,7 +6,7 @@ on:
       - "main"
     paths:
       - 'images/**' # Considerando que as imagens estão no diretório 'images/'
-      - '!*.txt'    # Ignora os arquivos .txtsss
+      - '!*.txt'    # Ignora os arquivos .txtssss
       - '.github/**'
 
 jobs:
